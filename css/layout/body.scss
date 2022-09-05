@@ -1,0 +1,174 @@
+$darkBlue: hsl(218, 28%, 13%);
+$cyan: hsl(176, 68%, 64%);
+$blue: hsl(198, 60%, 50%);
+$testimonials: hsl(219, 30%, 18%);
+$email: hsl(217, 28%, 15%);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $darkBlue;
+}
+
+.showcase {
+    background: url("../images/bg-curvy-mobile.svg");
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 3rem 0 6rem;
+    @include media-breakpoint-up(lg){
+        background-image: url("../images/bg-curvy-desktop.svg");
+    }
+}
+
+.mainImage {
+   // margin-top: 10%;
+    width: 90%;
+    @include media-breakpoint-up(lg){
+        width: 50%;
+    }
+}
+
+.getBtn {
+    padding: 0.8rem 5.5rem;
+    border-radius: 2rem;
+    background-image: linear-gradient(90deg, $cyan 2%, $blue 100%);
+    border: none;
+    @include media-breakpoint-up(lg){
+        padding: 0.8rem 6.5rem;
+    }
+    &:hover {
+        background-image: linear-gradient(45deg, #87f8f0, #65e2d9);
+    }
+}
+
+.img {
+    padding-top: 20%;
+}
+
+.stayImg {
+    width: 80%;
+    padding: 3rem 0 6rem;
+}
+
+.cardTest {
+    padding: 0 auto;
+    margin: 0 auto;
+    margin-top: 22%;
+    width: 24rem;
+    background-color: $testimonials;
+    @include media-breakpoint-up(lg){
+        margin-top: 20%;
+    }
+}
+
+ .quote-icon {
+    margin: 10rem 2.5rem -0.2rem;
+    width: 70px;
+    @include media-breakpoint-up(lg){
+       // position: absolute;
+       margin: 5rem 3rem -0.5rem;
+       // top: -1px;
+       width: 50px;
+    }
+ } 
+
+
+.cardImg {
+    border-radius: 50%;
+    width: 100%;
+   margin-top: 10%;
+    width: 40px;
+}
+
+.profile {
+    margin-bottom: 5%;
+}
+
+.mainCard {
+    margin-top: 10%;
+    @include media-breakpoint-up(lg){
+        margin-top: 20%;
+    }
+}
+
+.cardEarly {
+    padding: 0 auto;
+    margin: 0 auto;
+    margin-top: 40%;
+    background-color: $email;
+    width: 24rem;
+    @include media-breakpoint-up(lg){
+        width: 80%;
+        margin-top: 5%;
+        position: relative;
+        box-shadow: 8px 13px 21px -11px rgba(0,0,0,0.75);
+       // top: 30%;
+        //left: 50%;
+        bottom: -120px;
+        z-index: 20;
+    }
+
+}
+
+.form-control {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 2rem;
+    width: 90%;
+    height: 4rem;
+    &::placeholder { 
+        color: grey;
+        padding-left: 5%;
+        opacity: 0.4;
+        width: 100%;
+      }
+
+}
+
+.btnSubmit {
+    border-radius: 2rem;
+    background-image: linear-gradient(90deg, $cyan 2%, $blue 100%);
+    border: none;
+    padding: 0.8rem 5.7rem;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    @include media-breakpoint-up(lg){
+        padding: 1.3rem 5.7rem;
+        margin-top: 8%;
+    }
+    &:hover {
+        background-image: linear-gradient(45deg, #87f8f0, #65e2d9);
+    }
+}
+
+.stay {
+    @include media-breakpoint-up(lg){
+        margin-top: 10%;
+    }
+}
+
+.testimonial {
+    position: relative;
+    z-index: 1;
+&:after {
+    content: "";
+    position: absolute;
+    left: 32px;
+    top: 60px;
+    width: 55px;
+    height: 45px;
+    z-index: -1;
+    background-image: url('../images/bg-quotes.png');
+    background-size: cover;
+    background-repeat: no-repeat;     
+    @include media-breakpoint-up(lg){
+     left: 26px;
+   }
+}
+}

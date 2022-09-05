@@ -1,0 +1,8 @@
+.logo {
+  margin: 5%;
+  width: 70%;
+  @include media-breakpoint-up(lg){
+    margin: 10%;
+  }
+}
+

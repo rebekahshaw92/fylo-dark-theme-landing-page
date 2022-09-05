@@ -1,0 +1,87 @@
+$darkBlue: hsl(216, 53%, 9%);
+$cyan: hsl(176, 68%, 64%);
+
+.attribution { 
+    font-size: 11px; 
+    padding: 40px;
+    text-align: center; 
+     a { 
+         color: hsl(228, 45%, 44%); 
+        }
+}
+
+.mainFooter {
+    background-color: $darkBlue;
+    width: 100%;
+}
+
+.footerLogo {
+    width: 40%;
+    padding: 5%;
+    margin-top: 30%;
+    padding-bottom: 0;
+    @include media-breakpoint-up(lg){
+        width: 20%;
+        margin-top: 10%;
+    }
+}
+
+.info {
+    margin: 5%;
+    margin-top: 10%;
+}
+
+.infoMain {
+    margin: 5%;
+     @include media-breakpoint-up(lg){
+      margin-top: 10%;
+     }
+}
+
+.infoPhone {
+    @include media-breakpoint-up(lg){
+        margin-top: 10%;
+    }
+}
+
+.menu {
+    margin-top: 10%;
+}
+
+.footerMenu {
+      @include media-breakpoint-up(lg){
+         display: grid;
+         grid-template-columns: 4fr 3fr;
+         grid-template-rows: 1fr;
+     }
+}
+
+.footerMenu2 {
+    @include media-breakpoint-up(lg){
+        margin-top: 15% !important;
+    }
+}
+
+.social {
+    margin-top: 20%;
+    margin-bottom: 10%;
+    @include media-breakpoint-up(lg){
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+}
+ 
+.fa-brands {
+    color: $white;
+    border: 1px solid $white;
+    border-radius: 3rem;
+    padding: 20% 20% 20% 20%; 
+     &:hover {
+         color: $cyan;
+         border: 1px solid $cyan;
+     }
+
+}
+
+
+

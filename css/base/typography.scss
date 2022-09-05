@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+$heading: 'Raleway', sans-serif;
+$body: 'Open Sans', sans-serif;
+$white: hsl(0, 0%, 100%);
+$cyan: hsl(176, 68%, 64%);
+$lightRed: hsl(0, 100%, 63%);
+
+.nav-link {
+    color: $white;
+    font-family: $heading;
+    opacity: 0.8;
+    &:hover {
+        color: $white;
+        opacity: 1 !important;
+        text-decoration: underline;
+    }
+}
+
+.title {
+    color: $white;
+    font-family: $heading;
+    font-weight: 700;
+    margin-top: 10%;
+    font-size: 2rem;
+    @include media-breakpoint-up(lg){
+        margin: 0 auto;
+        padding: 0 auto;
+        font-size: 2.5rem;
+        margin: 1rem 0 2rem;
+        margin-top: 10%;
+        margin-left: 20%;
+        margin-right: 20%;
+
+    }
+}
+
+.subtitle {
+    color: $white;
+    font-family: $heading;
+    font-size: 1.2rem;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 6%;
+    margin-right: 6%;
+    opacity: 0.8;
+    @include media-breakpoint-up(lg){
+        font-size: 1.5rem;
+        margin-bottom: 2.5rem;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
+
+.getBtn {
+    font-family: $heading;
+    font-weight: 700;
+}
+
+.maiinTitle {
+    font-family: $body;
+    color: $white;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-top: 5%;
+}
+
+.mainText {
+    margin: 5%;
+    color: $white;
+    font-family: $body;
+    font-size: 1.1rem;
+    opacity: 0.8;
+    @include media-breakpoint-up(lg){
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+.stayTitle {
+    color: $white;
+    font-family: $body;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-bottom: 7%;
+    font-weight: 700;
+    font-size: 1.3rem;
+    @include media-breakpoint-up(lg){
+        font-size: 3rem;
+        width: 70%;
+    }
+}
+
+.subtext {
+    color: $white;
+    font-family: $body;
+    margin-left: 10%;
+    margin-right: 5%;
+    font-size: 1.05rem;
+    line-height: 1.8rem;
+    opacity: 0.8;
+}
+
+.linkStay {
+    color: $cyan;
+    margin-left: 10%;
+    text-decoration: none;
+    padding-bottom: 2%;
+    border-bottom: 1px solid $cyan;
+    display: inline-block;
+    font-size: 1.05rem;
+    font-family: $body;
+    width: 40%;
+    &:hover {
+        color: $white;
+        border-bottom: 1px solid $white;
+    > svg > g > g > use { 
+        fill: $white;
+      } 
+    }
+
+    @include media-breakpoint-up(lg){
+        width: 26%;
+    }
+}
+
+.card-text {
+    color: $white;
+    margin: 10%;
+    margin-right: 6%;
+    margin-left: 6%;
+    font-family: $body;
+    line-height: 1.8rem;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.name {
+    color: $white;
+    font-family: $body;
+    font-weight: 700;
+}
+
+.job {
+    color: $white;
+    font-family: $body;
+    font-size: 0.8rem; 
+    margin-top: -4%;
+    opacity: 0.8;
+}
+
+.earlyTtitle {
+    color: $white;
+    font-family: $heading;
+    font-weight: 700;
+    margin: 10%;
+    font-size: 1.5rem;
+    @include media-breakpoint-up(lg){
+        margin: 5%;
+
+    }
+}
+
+.earlyText {
+    color: $white;
+    font-family: $body;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    opacity: 0.8;
+}
+
+
+.footerText {
+    color: $white;
+    font-size: 1.3rem;
+    font-family: $body;
+    opacity: 0.8;
+    @include media-breakpoint-up(lg){
+        font-size: 1rem;
+    }
+}
+
+.link {
+    list-style: none;
+    margin-top: 5%;
+    font-family: $body;
+    a {
+        text-decoration: none;
+        color: $white;
+        opacity: 0.8;
+        font-size: 1.3rem;
+        @include media-breakpoint-up(lg){
+            font-size: 1rem;
+        }
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+#error {
+    color: $red;
+    margin-left: 10%;
+    margin-top: 2%;
+    font-weight: 700;
+    font-family: $heading;
+}
